@@ -1,9 +1,12 @@
 import React from "react"
 
 const Hero = () => (
-  <div>
-    This is the hero
-  </div>
+  <section>
+    <div>
+      <h1>Welcome To</h1>
+      <h2>YourCompanyName</h2>
+    </div>
+  </section>
 )
 
 export default Hero
