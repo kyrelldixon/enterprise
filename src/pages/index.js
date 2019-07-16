@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import TeamLeaders from "../components/team-leaders"
 import Counters from "../components/counters"
 import Section from "../components/section"
+import ContactUs from "../components/contact-us"
 import Details from "../components/details"
 import Footer from "../components/footer"
 
@@ -20,9 +21,7 @@ export default () => (
     <Section>
       Blank Section
     </Section>
-    <Section>
-      Contact Us
-    </Section>
+    <ContactUs />
     <Section>
       About Us
     </Section>
