@@ -1,6 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
+
+import mockCategories from "../data/categories.json"
+import mockCities from "../data/cities.json"
 
 const ContactForm = () => {
+  const [categories, ] = useState(mockCategories)
+  const [cities, ] = useState(mockCities)
+
   const handleSubmit = (e) => {
     e.preventDefault()
   }
@@ -9,17 +15,11 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
       <input type="text" name="name" placeholder="Name" />
       <select name="Category">
-        <option value="thing1">Thing 1</option>
-        <option value="thing2">Thing 2</option>
-        <option value="thing3">Thing 3</option>
-        <option value="thing4">Thing 4</option>
+        { categories.map(category => <option value={category.toLowerCase()}>{category}</option>) }
       </select>
       <input type="text" name="phone" placeholder="Phone" />
       <select name="City">
-        <option value="thing1">Thing 1</option>
-        <option value="thing2">Thing 2</option>
-        <option value="thing3">Thing 3</option>
-        <option value="thing4">Thing 4</option>
+        { cities.map(city => <option value={city.toLowerCase()}>{city}</option>) }
       </select>
       <input type="email" name="email" placeholder="Email" />
       <textarea name="message" />
