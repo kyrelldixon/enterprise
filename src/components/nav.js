@@ -1,7 +1,7 @@
 import React from "react"
 
 const Nav = () => (
-  <nav className="hidden md:block bg-black-transparent fixed w-screen z-50">
+  <nav className="self-start hidden md:block bg-black-transparent w-screen h-auto z-50">
     <ul className="flex px-12 justify-between lg:justify-start">
       <li className="text-gray-900 bg-blue-transparent px-4 py-4 uppercase">Home</li>
       <li className="text-gray-200 px-4 py-4 uppercase hover:text-gray-900 hover:bg-blue-transparent">About</li>
