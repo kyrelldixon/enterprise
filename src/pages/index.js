@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import TeamLeaders from "../components/team-leaders"
 import Counters from "../components/counters"
 import Section from "../components/section"
+import Infographic from "../components/infographic"
 import ContactUs from "../components/contact-us"
 import Details from "../components/details"
 import Footer from "../components/footer"
@@ -18,9 +19,7 @@ export default () => (
     <Hero />
     <TeamLeaders />
     <Counters />
-    <Section>
-      Blank Section
-    </Section>
+    <Infographic />
     <ContactUs />
     <Section>
       About Us
