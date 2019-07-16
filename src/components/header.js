@@ -2,7 +2,7 @@ import React from "react"
 
 const Header = () => (
   <header>
-    This is the header
+    <a href="#">YourCompanyName</a>
   </header>
 )
 
