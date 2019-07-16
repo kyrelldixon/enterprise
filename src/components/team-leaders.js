@@ -14,7 +14,7 @@ const TeamLeaders = () => {
         Ratione omnis ipsam adipisci quidem magni enim incidunt fugiat 
         dolorum quod nihil quas, cupiditate architecto beatae perspiciatis. 
         Veniam modi exercitationem expedita consectetur.</p>
-      {teamLeaders.map(leader => <Card imgSrc={leader.imgSrc} title={leader.name} details={leader.description} />)}
+      {teamLeaders.map(leader => <Card key={leader.name} imgSrc={leader.imgSrc} title={leader.name} details={leader.description} />)}
     </section>
   )
 }

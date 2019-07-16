@@ -15,11 +15,11 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
       <input type="text" name="name" placeholder="Name" />
       <select name="Category">
-        { categories.map(category => <option value={category.toLowerCase()}>{category}</option>) }
+        { categories.map(category => <option key={category} value={category.toLowerCase()}>{category}</option>) }
       </select>
       <input type="text" name="phone" placeholder="Phone" />
       <select name="City">
-        { cities.map(city => <option value={city.toLowerCase()}>{city}</option>) }
+        { cities.map(city => <option key={city} value={city.toLowerCase()}>{city}</option>) }
       </select>
       <input type="email" name="email" placeholder="Email" />
       <textarea name="message" />
