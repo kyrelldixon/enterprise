@@ -9,6 +9,7 @@ import Counters from "../components/counters"
 import Section from "../components/section"
 import Infographic from "../components/infographic"
 import ContactUs from "../components/contact-us"
+import About from "../components/about"
 import Details from "../components/details"
 import Footer from "../components/footer"
 
@@ -21,9 +22,7 @@ export default () => (
     <Counters />
     <Infographic />
     <ContactUs />
-    <Section>
-      About Us
-    </Section>
+    <About />
     <Section>
       Our Gallery
     </Section>
