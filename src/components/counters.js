@@ -4,12 +4,12 @@ import Count from "./count.js"
 
 import countData from "../data/counts.json"
 
-const Counters = ({}) => {
+const Counters = () => {
   const [counts, ] = useState(countData)
   
   return (
     <section>
-      { counts.map(count => <Count label={count.label} value={count.value} />)}
+      { counts.map(count => <Count key={count.label} label={count.label} value={count.value} />)}
     </section>
   )
 }
