@@ -5,6 +5,7 @@ import Header from "../components/header"
 import Nav from "../components/nav"
 import Hero from "../components/hero"
 import TeamLeaders from "../components/team-leaders"
+import Counters from "../components/counters"
 import Section from "../components/section"
 import Details from "../components/details"
 import Footer from "../components/footer"
@@ -15,9 +16,7 @@ export default () => (
     <Nav />
     <Hero />
     <TeamLeaders />
-    <Details>
-      Numbers
-    </Details>
+    <Counters />
     <Section>
       Blank Section
     </Section>
