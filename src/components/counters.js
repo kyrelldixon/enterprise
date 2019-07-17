@@ -8,8 +8,10 @@ const Counters = () => {
   const [counts, ] = useState(countData)
   
   return (
-    <section>
-      { counts.map(count => <Count key={count.label} label={count.label} value={count.value} />)}
+    <section className="bg-teal-900 px-4">
+      <div className="mx-auto flex flex-wrap justify-around items-center">
+        { counts.map(count => <Count key={count.label} label={count.label} value={count.value} />)}
+      </div>
     </section>
   )
 }
