@@ -16,7 +16,7 @@ const TeamLeaders = () => {
           dolorum quod nihil quas, cupiditate architecto beatae perspiciatis. 
           Veniam modi exercitationem expedita consectetur.</p>
       </div>
-      <div className="mx-auto flex flex-wrap justify-around max-w-4xl">
+      <div className="mx-auto flex flex-wrap justify-around max-w-6xl">
         {teamLeaders.map(leader => <Card key={leader.name} imgSrc={leader.imgSrc} title={leader.name} details={leader.description} />)}
       </div>
     </section>
