@@ -1,5 +1,9 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+@responsive {
+  .w-half-pad-1 {
+    width: calc(50% - 1rem);
+  }
+}
